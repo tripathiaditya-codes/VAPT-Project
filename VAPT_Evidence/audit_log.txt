@@ -1,0 +1,41 @@
+Sunday 11 October 2026 12:47:24 PM IST: WhatWeb on HTTP - 403 Forbidden, behind awselb/2.0
+Sunday 11 October 2026 12:47:37 PM IST: Nmap - only ports 80,443 open (998 filtered), behind AWS ELB, AWS WAF detected (WAFRule header present), SSL cert valid till 2027-03-09
+- Nikto v2.6.1/
++ Target Host: giftacareer.in
++ Target Port: 80
++ GET /: Server banner changed from 'ip-100-74-5-104.eu-west-2.compute.internal' to 'ip-100-74-5-26.eu-west-2.compute.internal'.
++ GET /: Uncommon header(s) 'x-request-id' found, with contents: 7e2abef2-be61-4257-8bde-1fd7797e68f5.
++ GET /server-status: Uncommon header(s) 'wafrule' found, with contents: 5.
++ GET /: Suggested security header missing: content-security-policy. See: https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP: 
++ GET /: Suggested security header missing: permissions-policy. See: https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Permissions-Policy: 
++ GET /: Suggested security header missing: strict-transport-security. See: https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Strict-Transport-Security: 
++ GET /: Suggested security header missing: x-content-type-options. See: https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-Content-Type-Options: 
++ GET /: Suggested security header missing: referrer-policy. See: https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Referrer-Policy: 
+- Nikto v2.6.1/
++ Target Host: giftacareer.in
++ Target Port: 80
++ GET /: Server banner changed from 'ip-100-74-5-88.eu-west-2.compute.internal' to 'ip-100-74-5-104.eu-west-2.compute.internal'.
++ GET /: Uncommon header(s) 'x-request-id' found, with contents: 7bef03ef-739a-46f4-9a19-53c0f057a2bc.
++ GET /server-status: Uncommon header(s) 'wafrule' found, with contents: 5.
++ GET /: Suggested security header missing: content-security-policy. See: https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP: 
++ GET /: Suggested security header missing: referrer-policy. See: https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Referrer-Policy: 
++ GET /: Suggested security header missing: permissions-policy. See: https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Permissions-Policy: 
++ GET /: Suggested security header missing: strict-transport-security. See: https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Strict-Transport-Security: 
++ GET /: Suggested security header missing: x-content-type-options. See: https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-Content-Type-Options: 
+- Nikto v2.6.1/
++ Target Host: giftacareer.in
++ Target Port: 80
++ GET /: Server banner changed from 'ip-100-74-5-104.eu-west-2.compute.internal' to 'ip-100-74-5-26.eu-west-2.compute.internal'.
++ GET /: Uncommon header(s) 'x-request-id' found, with contents: cb016126-b493-4f04-b1b5-9671871fa445.
++ GET /server-status: Uncommon header(s) 'wafrule' found, with contents: 5.
++ GET /: Suggested security header missing: referrer-policy. See: https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Referrer-Policy: 
++ GET /: Suggested security header missing: content-security-policy. See: https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP: 
++ GET /: Suggested security header missing: strict-transport-security. See: https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Strict-Transport-Security: 
++ GET /: Suggested security header missing: permissions-policy. See: https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Permissions-Policy: 
++ GET /: Suggested security header missing: x-content-type-options. See: https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-Content-Type-Options: 
+Sunday 11 October 2026 01:17:04 PM IST: ZAP automated scan complete - 9 alerts (0 High, 3 Medium, 4 Low, 2 Info)
+Sunday 11 October 2026 01:21:01 PM IST: giftacareer.in redirects to ccgac.bitrix24.site (Bitrix24 SaaS platform) - third-party hosting
+Sunday 11 October 2026 01:23:16 PM IST: No login/signup found on giftacareer.in. Contact form hosted externally at share.hsforms.com (HubSpot) - out of scope, not tested.
+Sunday 11 October 2026 01:24:34 PM IST: Ran light load test (ab -n 50 -c 5) on https://giftacareer.in/ - see perf_test.txt for response times
+Sunday 11 October 2026 01:25:37 PM IST: Load test complete - 50/50 requests succeeded (0 failed), all non-2xx (403), avg response 406ms, no degradation under light load. Internal AWS hostname leaked again in Server header.
+Sunday 11 October 2026 01:31:15 PM IST: Cross-browser check (Chromium) - site rendered correctly, 0 console errors, 10 minor deprecation warnings (unrelated to security, from third-party Bitrix24 code). Firefox rendering matched.

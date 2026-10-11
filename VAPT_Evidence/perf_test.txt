@@ -1,0 +1,46 @@
+This is ApacheBench, Version 2.3 <$Revision: 1913912 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking giftacareer.in (be patient).....done
+
+
+Server Software:        ip-100-74-4-159.eu-west-2.compute.internal
+Server Hostname:        giftacareer.in
+Server Port:            443
+SSL/TLS Protocol:       TLSv1.3,TLS_AES_128_GCM_SHA256,2048,128
+Server Temp Key:        X25519 253 bits
+TLS Server Name:        giftacareer.in
+
+Document Path:          /
+Document Length:        63 bytes
+
+Concurrency Level:      5
+Time taken for tests:   4.512 seconds
+Complete requests:      50
+Failed requests:        0
+Non-2xx responses:      50
+Total transferred:      18020 bytes
+HTML transferred:       3150 bytes
+Requests per second:    11.08 [#/sec] (mean)
+Time per request:       451.213 [ms] (mean)
+Time per request:       90.243 [ms] (mean, across all concurrent requests)
+Transfer rate:          3.90 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:      233  259  30.7    243     344
+Processing:   118  146  65.0    126     381
+Waiting:      118  146  65.0    125     381
+Total:        354  406  87.0    372     701
+
+Percentage of the requests served within a certain time (ms)
+  50%    372
+  66%    393
+  75%    413
+  80%    421
+  90%    431
+  95%    697
+  98%    701
+  99%    701
+ 100%    701 (longest request)

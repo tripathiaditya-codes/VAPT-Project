@@ -1,0 +1,9 @@
+Server:		8.8.8.8
+Address:	8.8.8.8#53
+
+Non-authoritative answer:
+Name:	giftacareer.in
+Address: 15.197.225.128
+Name:	giftacareer.in
+Address: 3.33.251.168
+

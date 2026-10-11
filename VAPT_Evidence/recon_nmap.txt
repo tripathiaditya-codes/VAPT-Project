@@ -1,0 +1,181 @@
+# Nmap 7.94SVN scan initiated Sun Oct 11 12:40:54 2026 as: /usr/lib/nmap/nmap --privileged -sV -sC --max-rate 50 -oN recon_nmap.txt giftacareer.in
+Nmap scan report for giftacareer.in (15.197.225.128)
+Host is up (0.039s latency).
+Other addresses for giftacareer.in (not scanned): 3.33.251.168
+rDNS record for 15.197.225.128: aec037177372cc6cd.awsglobalaccelerator.com
+Not shown: 998 filtered tcp ports (no-response)
+PORT    STATE SERVICE   VERSION
+80/tcp  open  http      awselb/2.0
+|_http-title: 403 Forbidden
+|_http-server-header: awselb/2.0
+| fingerprint-strings: 
+|   DNSVersionBindReqTCP: 
+|     HTTP/1.1 400 Bad Request
+|     Server: awselb/2.0
+|     Date: Sun, 11 Oct 2026 07:12:24 GMT
+|     Content-Type: text/html
+|     Content-Length: 122
+|     Connection: close
+|     <html>
+|     <head><title>400 Bad Request</title></head>
+|     <body>
+|     <center><h1>400 Bad Request</h1></center>
+|     </body>
+|     </html>
+|   FourOhFourRequest: 
+|     HTTP/1.1 404 Not Found
+|     Server: awselb/2.0
+|     Date: Sun, 11 Oct 2026 07:12:18 GMT
+|     Content-Length: 0
+|     Connection: close
+|     WAFRule: 5
+|   GetRequest: 
+|     HTTP/1.1 403 Forbidden
+|     Server: awselb/2.0
+|     Date: Sun, 11 Oct 2026 07:12:17 GMT
+|     Content-Type: text/html
+|     Content-Length: 118
+|     Connection: close
+|     <html>
+|     <head><title>403 Forbidden</title></head>
+|     <body>
+|     <center><h1>403 Forbidden</h1></center>
+|     </body>
+|     </html>
+|   HTTPOptions: 
+|     HTTP/1.1 405 Not Allowed
+|     Server: awselb/2.0
+|     Date: Sun, 11 Oct 2026 07:12:17 GMT
+|     Content-Length: 0
+|     Connection: close
+|     WAFRule: 0
+|   RPCCheck: 
+|     HTTP/1.1 400 Bad Request
+|     Server: awselb/2.0
+|     Date: Sun, 11 Oct 2026 07:12:23 GMT
+|     Content-Type: text/html
+|     Content-Length: 122
+|     Connection: close
+|     <html>
+|     <head><title>400 Bad Request</title></head>
+|     <body>
+|     <center><h1>400 Bad Request</h1></center>
+|     </body>
+|     </html>
+|   RTSPRequest: 
+|     <html>
+|     <head><title>400 Bad Request</title></head>
+|     <body>
+|     <center><h1>400 Bad Request</h1></center>
+|     </body>
+|     </html>
+|   X11Probe: 
+|     HTTP/1.1 400 Bad Request
+|     Server: awselb/2.0
+|     Date: Sun, 11 Oct 2026 07:12:18 GMT
+|     Content-Type: text/html
+|     Content-Length: 122
+|     Connection: close
+|     <html>
+|     <head><title>400 Bad Request</title></head>
+|     <body>
+|     <center><h1>400 Bad Request</h1></center>
+|     </body>
+|_    </html>
+443/tcp open  ssl/https awselb/2.0
+|_ssl-date: TLS randomness does not represent time
+|_http-title: Site doesn't have a title.
+|_http-server-header: awselb/2.0
+| fingerprint-strings: 
+|   FourOhFourRequest, GetRequest: 
+|     HTTP/1.0 422 Unprocessable Entity
+|     Content-Type: text/plain; charset=utf-8
+|     X-Content-Type-Options: nosniff
+|     Date: Sun, 11 Oct 2026 07:12:24 GMT
+|     Content-Length: 21
+|     Unprocessable Entity
+|   GenericLines, Help, Kerberos, LPDString, RTSPRequest, SSLSessionReq, TLSSessionReq, TerminalServerCookie: 
+|     HTTP/1.1 400 Bad Request
+|     Content-Type: text/plain; charset=utf-8
+|     Connection: close
+|     Request
+|   HTTPOptions: 
+|     HTTP/1.0 405 Method Not Allowed
+|     Allow: GET, HEAD
+|     Content-Type: text/plain; charset=utf-8
+|     X-Content-Type-Options: nosniff
+|     Date: Sun, 11 Oct 2026 07:12:24 GMT
+|     Content-Length: 19
+|_    Method Not Allowed
+| ssl-cert: Subject: commonName=giftacareer.in
+| Subject Alternative Name: DNS:giftacareer.in
+| Not valid before: 2026-08-23T07:22:43
+|_Not valid after:  2027-03-09T07:22:43
+2 services unrecognized despite returning data. If you know the service/version, please submit the following fingerprints at https://nmap.org/cgi-bin/submit.cgi?new-service :
+==============NEXT SERVICE FINGERPRINT (SUBMIT INDIVIDUALLY)==============
+SF-Port80-TCP:V=7.94SVN%I=7%D=10/11%Time=6ACB36D1%P=x86_64-pc-linux-gnu%r(
+SF:GetRequest,10A,"HTTP/1\.1\x20403\x20Forbidden\r\nServer:\x20awselb/2\.0
+SF:\r\nDate:\x20Sun,\x2011\x20Oct\x202026\x2007:12:17\x20GMT\r\nContent-Ty
+SF:pe:\x20text/html\r\nContent-Length:\x20118\r\nConnection:\x20close\r\n\
+SF:r\n<html>\r\n<head><title>403\x20Forbidden</title></head>\r\n<body>\r\n
+SF:<center><h1>403\x20Forbidden</h1></center>\r\n</body>\r\n</html>\r\n")%
+SF:r(HTTPOptions,87,"HTTP/1\.1\x20405\x20Not\x20Allowed\r\nServer:\x20awse
+SF:lb/2\.0\r\nDate:\x20Sun,\x2011\x20Oct\x202026\x2007:12:17\x20GMT\r\nCon
+SF:tent-Length:\x200\r\nConnection:\x20close\r\nWAFRule:\x200\r\n\r\n")%r(
+SF:RTSPRequest,7A,"<html>\r\n<head><title>400\x20Bad\x20Request</title></h
+SF:ead>\r\n<body>\r\n<center><h1>400\x20Bad\x20Request</h1></center>\r\n</
+SF:body>\r\n</html>\r\n")%r(X11Probe,110,"HTTP/1\.1\x20400\x20Bad\x20Reque
+SF:st\r\nServer:\x20awselb/2\.0\r\nDate:\x20Sun,\x2011\x20Oct\x202026\x200
+SF:7:12:18\x20GMT\r\nContent-Type:\x20text/html\r\nContent-Length:\x20122\
+SF:r\nConnection:\x20close\r\n\r\n<html>\r\n<head><title>400\x20Bad\x20Req
+SF:uest</title></head>\r\n<body>\r\n<center><h1>400\x20Bad\x20Request</h1>
+SF:</center>\r\n</body>\r\n</html>\r\n")%r(FourOhFourRequest,85,"HTTP/1\.1
+SF:\x20404\x20Not\x20Found\r\nServer:\x20awselb/2\.0\r\nDate:\x20Sun,\x201
+SF:1\x20Oct\x202026\x2007:12:18\x20GMT\r\nContent-Length:\x200\r\nConnecti
+SF:on:\x20close\r\nWAFRule:\x205\r\n\r\n")%r(RPCCheck,110,"HTTP/1\.1\x2040
+SF:0\x20Bad\x20Request\r\nServer:\x20awselb/2\.0\r\nDate:\x20Sun,\x2011\x2
+SF:0Oct\x202026\x2007:12:23\x20GMT\r\nContent-Type:\x20text/html\r\nConten
+SF:t-Length:\x20122\r\nConnection:\x20close\r\n\r\n<html>\r\n<head><title>
+SF:400\x20Bad\x20Request</title></head>\r\n<body>\r\n<center><h1>400\x20Ba
+SF:d\x20Request</h1></center>\r\n</body>\r\n</html>\r\n")%r(DNSVersionBind
+SF:ReqTCP,110,"HTTP/1\.1\x20400\x20Bad\x20Request\r\nServer:\x20awselb/2\.
+SF:0\r\nDate:\x20Sun,\x2011\x20Oct\x202026\x2007:12:24\x20GMT\r\nContent-T
+SF:ype:\x20text/html\r\nContent-Length:\x20122\r\nConnection:\x20close\r\n
+SF:\r\n<html>\r\n<head><title>400\x20Bad\x20Request</title></head>\r\n<bod
+SF:y>\r\n<center><h1>400\x20Bad\x20Request</h1></center>\r\n</body>\r\n</h
+SF:tml>\r\n");
+==============NEXT SERVICE FINGERPRINT (SUBMIT INDIVIDUALLY)==============
+SF-Port443-TCP:V=7.94SVN%T=SSL%I=7%D=10/11%Time=6ACB36D8%P=x86_64-pc-linux
+SF:-gnu%r(GetRequest,BD,"HTTP/1\.0\x20422\x20Unprocessable\x20Entity\r\nCo
+SF:ntent-Type:\x20text/plain;\x20charset=utf-8\r\nX-Content-Type-Options:\
+SF:x20nosniff\r\nDate:\x20Sun,\x2011\x20Oct\x202026\x2007:12:24\x20GMT\r\n
+SF:Content-Length:\x2021\r\n\r\nUnprocessable\x20Entity\n")%r(HTTPOptions,
+SF:CB,"HTTP/1\.0\x20405\x20Method\x20Not\x20Allowed\r\nAllow:\x20GET,\x20H
+SF:EAD\r\nContent-Type:\x20text/plain;\x20charset=utf-8\r\nX-Content-Type-
+SF:Options:\x20nosniff\r\nDate:\x20Sun,\x2011\x20Oct\x202026\x2007:12:24\x
+SF:20GMT\r\nContent-Length:\x2019\r\n\r\nMethod\x20Not\x20Allowed\n")%r(Fo
+SF:urOhFourRequest,BD,"HTTP/1\.0\x20422\x20Unprocessable\x20Entity\r\nCont
+SF:ent-Type:\x20text/plain;\x20charset=utf-8\r\nX-Content-Type-Options:\x2
+SF:0nosniff\r\nDate:\x20Sun,\x2011\x20Oct\x202026\x2007:12:24\x20GMT\r\nCo
+SF:ntent-Length:\x2021\r\n\r\nUnprocessable\x20Entity\n")%r(GenericLines,6
+SF:7,"HTTP/1\.1\x20400\x20Bad\x20Request\r\nContent-Type:\x20text/plain;\x
+SF:20charset=utf-8\r\nConnection:\x20close\r\n\r\n400\x20Bad\x20Request")%
+SF:r(RTSPRequest,67,"HTTP/1\.1\x20400\x20Bad\x20Request\r\nContent-Type:\x
+SF:20text/plain;\x20charset=utf-8\r\nConnection:\x20close\r\n\r\n400\x20Ba
+SF:d\x20Request")%r(Help,67,"HTTP/1\.1\x20400\x20Bad\x20Request\r\nContent
+SF:-Type:\x20text/plain;\x20charset=utf-8\r\nConnection:\x20close\r\n\r\n4
+SF:00\x20Bad\x20Request")%r(SSLSessionReq,67,"HTTP/1\.1\x20400\x20Bad\x20R
+SF:equest\r\nContent-Type:\x20text/plain;\x20charset=utf-8\r\nConnection:\
+SF:x20close\r\n\r\n400\x20Bad\x20Request")%r(TerminalServerCookie,67,"HTTP
+SF:/1\.1\x20400\x20Bad\x20Request\r\nContent-Type:\x20text/plain;\x20chars
+SF:et=utf-8\r\nConnection:\x20close\r\n\r\n400\x20Bad\x20Request")%r(TLSSe
+SF:ssionReq,67,"HTTP/1\.1\x20400\x20Bad\x20Request\r\nContent-Type:\x20tex
+SF:t/plain;\x20charset=utf-8\r\nConnection:\x20close\r\n\r\n400\x20Bad\x20
+SF:Request")%r(Kerberos,67,"HTTP/1\.1\x20400\x20Bad\x20Request\r\nContent-
+SF:Type:\x20text/plain;\x20charset=utf-8\r\nConnection:\x20close\r\n\r\n40
+SF:0\x20Bad\x20Request")%r(LPDString,67,"HTTP/1\.1\x20400\x20Bad\x20Reques
+SF:t\r\nContent-Type:\x20text/plain;\x20charset=utf-8\r\nConnection:\x20cl
+SF:ose\r\n\r\n400\x20Bad\x20Request");
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Sun Oct 11 12:44:06 2026 -- 1 IP address (1 host up) scanned in 191.70 seconds
